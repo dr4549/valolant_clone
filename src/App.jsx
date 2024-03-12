@@ -1,9 +1,9 @@
-import { Chart } from './components/Chart.jsx';
+import { Header } from './components/Header.jsx';
 
 const App = () => {
   return (
     <div>
-      <Chart />
+      <Header />
     </div>
   );
 };
