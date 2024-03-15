@@ -1,0 +1,26 @@
+li {
+  list-style: none;
+}
+
+.main_header {
+  height: 80px;
+  .logo_riot {
+    width: 95px;
+    height: 32px;
+    cursor: pointer;
+  }
+  .logo_valorant {
+    width: 35px;
+    height: 40px;
+    cursor: pointer;
+  }
+  .header_wrapper {
+    position: fixed;
+    background: #222222;
+    nav {
+      ul {
+        display: flex;
+      }
+    }
+  }
+}
