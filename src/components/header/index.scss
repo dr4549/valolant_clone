@@ -1,25 +1,59 @@
-li {
-  list-style: none;
+.logo_riot {
+  width: 95px;
+  height: 32px;
+  cursor: pointer;
+}
+.logo_valorant {
+  width: 35px;
+  height: 40px;
+  cursor: pointer;
+}
+.logo_wrapper {
+  display: flex;
+  align-items: center;
+}
+.dropdown_arrow {
+  margin-left: 5px;
+  width: 10px;
 }
 
 .main_header {
   height: 80px;
-  .logo_riot {
-    width: 95px;
-    height: 32px;
-    cursor: pointer;
-  }
-  .logo_valorant {
-    width: 35px;
-    height: 40px;
-    cursor: pointer;
-  }
   .header_wrapper {
     position: fixed;
-    background: #222222;
+    display: flex;
+    align-items: center;
+    padding: 0 36px;
+    width: 100%;
+    height: 80px;
+    white-space: nowrap;
+    background: #111111;
+    color: #ffffff;
+    // @media (max-width: 1000px) {
+    //   display: none;
+    // }
     nav {
       ul {
         display: flex;
+        li {
+          display: inline-flex;
+          align-items: center;
+          padding: 0 16px;
+          border-radius: 0.5em;
+          list-style: none;
+          cursor: pointer;
+          &:hover {
+            background: #3d3d3d;
+          }
+          a {
+            font-size: 0.8125em;
+            font-weight: 600;
+            text-decoration: none;
+            &:visited {
+              color: #ffffff;
+            }
+          }
+        }
       }
     }
   }

@@ -1,3 +1,4 @@
+import DropDownArrow from '../DropDownArrow';
 import LogoRiot from '../LogoRiot';
 import LogoValorant from '../LogoValorant';
 import './index.scss';
@@ -11,7 +12,10 @@ const Header = () => {
   return (
     <header className="main_header">
       <div className="header_wrapper">
-        <LogoRiot />
+        <div className="logo_wrapper">
+          <LogoRiot />
+          <DropDownArrow />
+        </div>
         <nav>
           <ul>
             <li>
@@ -21,27 +25,33 @@ const Header = () => {
             </li>
             <li>
               <Link to="/info">게임 정보</Link>
+              <DropDownArrow />
             </li>
             <li>
-              <Link to="/">미디어</Link>
+              <Link to="/media">미디어</Link>
             </li>
             <li>
-              <Link to="/">소식</Link>
+              <Link to="/news">소식</Link>
+              <DropDownArrow />
             </li>
             <li>
-              <Link to="/">순위표</Link>
+              <Link to="/leaderboards">순위표</Link>
             </li>
             <li>
-              <Link to="/">고객지원</Link>
+              <Link to="/support">고객지원</Link>
+              <DropDownArrow />
             </li>
             <li>
-              <Link to="/">이벤트</Link>
+              <a onClick={() => goToRoute('')}>이벤트</a>
+              <DropDownArrow />
             </li>
             <li>
-              <Link to="/">소셜 미디어</Link>
+              <a onClick={() => goToRoute('')}>소셜 미디어</a>
+              <DropDownArrow />
             </li>
             <li>
               <a onClick={() => goToRoute('')}>E스포츠</a>
+              <DropDownArrow />
             </li>
           </ul>
         </nav>
