@@ -3,7 +3,7 @@ import './index.scss';
 const App = () => {
   return (
     <div className="container">
-      <p>info</p>
+      <section>info</section>
     </div>
   );
 };
