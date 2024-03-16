@@ -24,21 +24,21 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link to="/info">게임 정보</Link>
+              <a onClick={() => goToRoute('')}>게임 정보</a>
               <DropDownArrow />
             </li>
             <li>
               <Link to="/media">미디어</Link>
             </li>
             <li>
-              <Link to="/news">소식</Link>
+              <a onClick={() => goToRoute('')}>소식</a>
               <DropDownArrow />
             </li>
             <li>
               <Link to="/leaderboards">순위표</Link>
             </li>
             <li>
-              <Link to="/support">고객지원</Link>
+              <a onClick={() => goToRoute('')}>고객지원</a>
               <DropDownArrow />
             </li>
             <li>

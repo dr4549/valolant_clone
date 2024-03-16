@@ -1,16 +1,16 @@
 .logo_riot {
   width: 95px;
   height: 32px;
-  cursor: pointer;
 }
 .logo_valorant {
-  width: 35px;
-  height: 40px;
+  width: 26px;
+  height: 21px;
   cursor: pointer;
 }
 .logo_wrapper {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .dropdown_arrow {
   margin-left: 5px;
@@ -19,11 +19,12 @@
 
 .main_header {
   height: 80px;
+  border-bottom: 2px solid #191919;
   .header_wrapper {
     position: fixed;
     display: flex;
     align-items: center;
-    padding: 0 36px;
+    padding-left: 36px;
     width: 100%;
     height: 80px;
     white-space: nowrap;
@@ -33,17 +34,25 @@
     //   display: none;
     // }
     nav {
+      margin-left: 22px;
       ul {
         display: flex;
+        align-items: center;
         li {
-          display: inline-flex;
+          display: flex;
           align-items: center;
-          padding: 0 16px;
           border-radius: 0.5em;
           list-style: none;
           cursor: pointer;
-          &:hover {
-            background: #3d3d3d;
+          &:first-child {
+            margin-right: 22px;
+          }
+          &:not(:first-child) {
+            padding: 7px 16px;
+            margin-right: 4px;
+            &:hover {
+              background: #3d3d3d;
+            }
           }
           a {
             font-size: 0.8125em;
