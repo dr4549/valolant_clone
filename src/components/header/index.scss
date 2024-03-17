@@ -39,6 +39,7 @@
         display: flex;
         align-items: center;
         li {
+          position: relative;
           display: flex;
           align-items: center;
           border-radius: 0.5em;
@@ -60,6 +61,20 @@
             text-decoration: none;
             &:visited {
               color: #ffffff;
+            }
+          }
+          .menu_hover {
+            position: absolute;
+            top: 45px;
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            border-top: 4px solid red;
+            border-radius: 0 0 2px 2px;
+            background: #292929;
+            // visibility: hidden;
+            a {
+              color: #fcfcfc;
             }
           }
         }
