@@ -1,0 +1,29 @@
+.home_container {
+  section {
+    .video_wrapper {
+      position: relative;
+      height: 400px;
+      overflow: hidden;
+      .video_text {
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        p {
+          color: red;
+        }
+        button {
+        }
+      }
+    }
+    video {
+      position: absolute;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
