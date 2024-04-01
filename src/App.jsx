@@ -4,7 +4,7 @@ import Home from './pages/home/index.jsx';
 import Info from './pages/info/index.jsx';
 import Media from './pages/media/index.jsx';
 import News from './pages/news/index.jsx';
-import Leaderboards from './pages/Leaderboards/index.jsx';
+import Leaderboards from './pages/leaderboards/index.jsx';
 import Support from './pages/support/index.jsx';
 
 const App = () => {
